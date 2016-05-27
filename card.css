@@ -1,9 +1,9 @@
 html {
-      background-image: url("./wallpaper.jpeg");
-  font-family: 'EptKazooMedium';
+  background-image: url("./wallpaper.jpeg");
+  font-family: 'DancingScriptBold';
   font-weight: normal;
-  font-size: 30px;
-  letter-spacing: 3px;
+  font-size: 32px;
+  font-weight: bold;
   text-align: center;
   color: #ff385f;
 }
@@ -15,17 +15,17 @@ ul {
 h1 {
   padding: 36px;
   width: 56%;
-  margin: 2px auto 10px 20%;
+  margin: 2px auto 10px 16%;
   display: block;
   border-radius: 40%;
-  transition: text-shadow 3s, background 1s, color 2s;
+  transition: text-shadow 3s, box-shadow 3s, background 2s, color 2s;
 }
 
 h1:hover {
   color: oldlace;
   box-shadow: inset 0px 0px 10px oldlace;
   background: black;
-  text-shadow: 0 0 10px oldlace, 0 0 20px oldlace, 0 0 30px oldlace, 0 0 40px #c00022, 0 0 70px #c00022, 0 0 80px #c00022, 0 0 100px #c00022, 0 0 150px pink;
+  text-shadow: 0 0 10px oldlace, 0 0 20px oldlace, 0 0 30px oldlace, 0 0 40px pink, 0 0 70px pink, 0 0 80px #c00022, 0 0 100px #c00022, 0 0 150px pink;
 }
 
 h1:hover .heart1:before, h1:hover .heart1:after, h1:hover .heart2:before, h1:hover .heart2:after {
@@ -274,20 +274,13 @@ h1:hover .heart1:before, h1:hover .heart1:after, h1:hover .heart2:before, h1:hov
     height: 0;
     border-left: 60px solid transparent;
     border-right: 60px solid transparent;
-    border-bottom: 160px solid #9e001f;
-    animation: hat-change 2s infinite;
-    animation-play-state: paused;
+    border-bottom: 160px solid #ff8da1;
     transform: rotate(-36deg);
     position: absolute;
     top: 3%;
     transition: opacity 2s;
     left: 12%;
     border-radius: 42%;
-}
-
-@keyframes hat-change {
-  0%, 50%, 100% { border-bottom-color #9e001f; }
-  25%, 75% { border-bottom-color: rebeccapurple; }
 }
 
 .hat:before {
@@ -401,10 +394,10 @@ h1:hover .heart1:before, h1:hover .heart1:after, h1:hover .heart2:before, h1:hov
 }
 
 @keyframes drift {
-    0% {transform: rotate(0deg);}
-    25% {transform: rotate(30deg);}
-    75% {transform: rotate(-30deg);}
-    100% {transform: rotate(0deg);}
+  0% {transform: rotate(0deg);}
+  25% {transform: rotate(30deg);}
+  75% {transform: rotate(-30deg);}
+  100% {transform: rotate(0deg);}
 }
 
 @keyframes blow {
