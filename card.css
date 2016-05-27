@@ -1,28 +1,11 @@
 html {
-  background-image: url("http://www.up8.cc/img/we442941.gif");
+      background-image: url("./wallpaper.jpeg");
   font-family: 'EptKazooMedium';
   font-weight: normal;
   font-size: 30px;
   letter-spacing: 3px;
   text-align: center;
   color: #ff385f;
-  animation: background-change 10s infinite;
-  background-size: contain;
-  background-repeat: repeat;
-}
-
-@keyframes background-change {
-  0% {
-    background-image: url("http://www.up8.cc/img/we442941.gif");
-  }
-
-  50% {
-    background-image: url("./wallpaper.jpeg");
-  }
-
-  100% {
-    background-image: url("http://www.themesltd.com/backgrounds/floral/pink_floral_wallpaper_pattern.png");
-  }
 }
 
 ul {
@@ -30,9 +13,9 @@ ul {
 }
 
 h1 {
-  padding: 24px 0 12px 0;
-  width: 40%;
-  margin: 2px auto 4px 27%;
+  padding: 36px;
+  width: 56%;
+  margin: 2px auto 10px 20%;
   display: block;
   border-radius: 40%;
   transition: text-shadow 3s, background 1s, color 2s;
@@ -40,11 +23,17 @@ h1 {
 
 h1:hover {
   color: oldlace;
-  background: #6b0015;
+  box-shadow: inset 0px 0px 10px oldlace;
+  background: black;
   text-shadow: 0 0 10px oldlace, 0 0 20px oldlace, 0 0 30px oldlace, 0 0 40px #c00022, 0 0 70px #c00022, 0 0 80px #c00022, 0 0 100px #c00022, 0 0 150px pink;
 }
 
-.heart {
+h1:hover .heart1:before, h1:hover .heart1:after, h1:hover .heart2:before, h1:hover .heart2:after {
+  background: pink;
+  box-shadow: 0 0 5px oldlace, 0 0 10px oldlace, 0 0 20px oldlace, 0 0 40px pink, 0 0 70px pink, 0 0 80px #c00022, 0 0 100px #c00022, 0 0 150px pink;
+}
+
+.heart1, .heart2 {
     position: relative;
     padding: 0;
     margin: 0;
@@ -53,16 +42,21 @@ h1:hover {
     width: 100px;
     height: 90px;
 }
-.heart:before,
-.heart:after {
+
+.heart2 {
+  float: right;
+}
+
+.heart1:before, .heart2:before, .heart1:after, .heart2:after {
     position: absolute;
     content: "";
     left: 50px;
     top: 0;
     width: 50px;
     height: 80px;
-    background: pink;
-    -moz-border-radius: 50px 50px 0 0;
+    box-shadow: inset -2px -1px 10px oldlace;
+    background:  #ff385f;
+      -moz-border-radius: 50px 50px 0 0;
     border-radius: 50px 50px 0 0;
     -webkit-transform: rotate(-45deg);
        -moz-transform: rotate(-45deg);
@@ -75,11 +69,12 @@ h1:hover {
          -o-transform-origin: 0 100%;
             transform-origin: 0 100%;
 }
-.heart:after {
+.heart1:after, .heart2:after {
     left: 0;
+      box-shadow: none;
     -webkit-transform: rotate(45deg);
-       -moz-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
          -o-transform: rotate(45deg);
             transform: rotate(45deg);
     -webkit-transform-origin: 100% 100%;
@@ -88,6 +83,7 @@ h1:hover {
          -o-transform-origin: 100% 100%;
             transform-origin :100% 100%;
 }
+
 .group:after {
   display: block;
   content: "";
